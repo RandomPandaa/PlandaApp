@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">Planda App</string>
+    <string name="frag_header_skip">Skip</string>
+    <string name="frag_maintxt">Log All Your</string>
+    <string name="frag_bodytxt">Plants</string>
+    <string name="frag1_txt">Never forget a plant again with this beautiful tracking software</string>
+    <string name="welcome_txt">Welcome to Planda</string>
+    <string name="email_hint_txt">Email</string>
+    <string name="password_hint_txt">Password</string>
+    <string name="forgot_password_txt">Forgot Password?</string>
+    <string name="login_txt">Login</string>
+    <string name="register_txt">Register</string>
+    <string name="password_confirm_hint_txt">Confirm Password</string>
+    <string name="enter_txt">Enter The App</string>
+</resources>

@@ -1,0 +1,23 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        maven { url 'https://jitpack.io'}
+        maven { url 'https://jitpack.io'
+
+            name = "GitHubPackages"
+
+            url = uri("https://maven.pkg.github.com/Cuberto/liquid-swipe-android")
+            credentials {
+
+                username = "RandomPandaa"
+                password = "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"
+
+            }
+        }
+    }
+}
+rootProject.name = "Planda App"
+include ':app'
