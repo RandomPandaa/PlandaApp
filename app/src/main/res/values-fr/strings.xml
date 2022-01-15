@@ -4,12 +4,16 @@
     <string name="frag_maintxt">Enregistrez Toutes Vos</string>
     <string name="frag_bodytxt">Plantes</string>
     <string name="frag1_txt">N\'oubliez plus jamais une plante avec ce magnifique logiciel de suivi</string>
+    <string name="frag2_txt">Never forget a plant again with this beautiful tracking software</string>
+    <string name="frag3_txt">Never forget a plant again with this beautiful tracking software</string>
     <string name="welcome_txt">Bienvenue D\'Planda</string>
     <string name="email_hint_txt">Adresse e-mail</string>
     <string name="password_hint_txt">mot de passe</string>
     <string name="forgot_password_txt">Mot de passe oublié?</string>
     <string name="login_txt">Connexion</string>
     <string name="register_txt">Enregistrer</string>
-    <string name="password_confirm_hint_txt">Confirm Password</string>
-    <string name="enter_txt">Enter The App</string>
+    <string name="password_confirm_hint_txt">Confirmez le mot de passe</string>
+    <string name="enter_txt">Entrer dans L\'App</string>
+    <string name="frag2_maintxt">Light Sensor</string>
+    <string name="frag2_bodytxt">Sensor</string>
 </resources>

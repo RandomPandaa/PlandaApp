@@ -5,16 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/frag_grey">
 
-    <ImageView
-        android:id="@+id/frag2img"
-        android:layout_width="235dp"
-        android:layout_height="217dp"
-        android:src="@drawable/imgtwo"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/frag_main_title"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <!--    <ImageView-->
     <!--        android:id="@+id/tmpImg"-->
     <!--        android:layout_width="wrap_content"-->
@@ -28,6 +18,17 @@
     <!--        app:lottie_autoPlay="true"-->
     <!--        app:lottie_rawRes="@raw/man_watering" />-->
 
+    <ImageView
+        android:id="@+id/frag2img"
+        android:layout_width="235dp"
+        android:layout_height="217dp"
+        android:src="@drawable/imgtwo"
+        app:layout_constraintBottom_toTopOf="@+id/frag_main_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name_frag_header" />
+
     <TextView
         android:id="@+id/app_name_frag_header"
         android:layout_width="wrap_content"
@@ -37,49 +38,48 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/fragment1animation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0" />
 
-    <TextView
-        android:id="@+id/skip_frag_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:text="@string/frag_header_skip"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/app_name_frag_header"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toEndOf="@+id/app_name_frag_header"
-        app:layout_constraintTop_toTopOf="@+id/app_name_frag_header" />
+<!--    <TextView-->
+<!--        android:id="@+id/skip_frag_header"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        android:text="@string/frag_header_skip"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/app_name_frag_header"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/app_name_frag_header"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/app_name_frag_header" />-->
 
     <TextView
         android:id="@+id/frag_main_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:text="@string/frag_maintxt"
+        android:text="@string/frag2_maintxt"
         android:textSize="42sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frag2img"
-        app:layout_constraintVertical_bias="0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/frag_main_body"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:text="@string/frag_bodytxt"
+        android:text="@string/frag2_bodytxt"
         android:textColor="@color/black"
         android:textSize="56sp"
         android:textStyle="bold"
@@ -95,7 +95,7 @@
         android:id="@+id/longtxtfrag1"
         android:layout_width="138dp"
         android:layout_height="96dp"
-        android:text="@string/frag1_txt"
+        android:text="@string/frag2_txt"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0"
@@ -108,7 +108,7 @@
         android:layout_width="50dp"
         android:layout_height="10dp"
         android:layout_marginBottom="40dp"
-        android:src="@drawable/tab2_white"
+        android:src="@drawable/tab2_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/longtxtfrag1"

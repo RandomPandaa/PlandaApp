@@ -13,7 +13,7 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.296195652173913" />
         <entry key="app/src/main/res/layout/fragment_onboarding1.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_onboarding2.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_onboarding3.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_onboarding3.xml" value="0.25" />
         <entry key="app/src/main/res/layout/login_tab_frag.xml" value="0.3442028985507246" />
         <entry key="app/src/main/res/layout/register_tab_frag.xml" value="0.6127167630057804" />
       </map>

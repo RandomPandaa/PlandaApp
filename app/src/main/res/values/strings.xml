@@ -4,6 +4,8 @@
     <string name="frag_maintxt">Log All Your</string>
     <string name="frag_bodytxt">Plants</string>
     <string name="frag1_txt">Never forget a plant again with this beautiful tracking software</string>
+    <string name="frag2_txt">Measure The Light Level For Your Plants</string>
+    <string name="frag3_txt">Remember when to water your plants</string>
     <string name="welcome_txt">Welcome to Planda</string>
     <string name="email_hint_txt">Email</string>
     <string name="password_hint_txt">Password</string>
@@ -12,4 +14,6 @@
     <string name="register_txt">Register</string>
     <string name="password_confirm_hint_txt">Confirm Password</string>
     <string name="enter_txt">Enter The App</string>
+    <string name="frag2_maintxt">Light</string>
+    <string name="frag2_bodytxt">Sensor</string>
 </resources>

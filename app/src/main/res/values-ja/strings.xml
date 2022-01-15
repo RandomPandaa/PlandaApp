@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">Planda App</string>
+    <string name="frag_header_skip">スキップ</string>
+    <string name="frag_maintxt">すべてのログに記録する</string>
+    <string name="frag_bodytxt">植物</string>
+    <string name="frag1_txt">Never forget a plant again with this beautiful tracking software</string>
+    <string name="frag2_txt">Never forget a plant again with this beautiful tracking software</string>
+    <string name="frag3_txt">Never forget a plant again with this beautiful tracking software</string>
+    <string name="welcome_txt">ようこそ Planda</string>
+    <string name="email_hint_txt">Eメール</string>
+    <string name="password_hint_txt">パスワード</string>
+    <string name="forgot_password_txt">パスワードをお忘れですか？</string>
+    <string name="login_txt">ログイン</string>
+    <string name="register_txt">登録</string>
+    <string name="password_confirm_hint_txt">パスワードを認証する</string>
+    <string name="enter_txt">アプリケーションを入力してください</string>
+    <string name="frag2_maintxt">Light Sensor</string>
+    <string name="frag2_bodytxt">Sensor</string>
+</resources>
