@@ -15,19 +15,19 @@ import androidx.fragment.app.Fragment;
 
 public class OnboardFrag3 extends Fragment {
 
-    private Button enterBtn;
+    private TextView skipTxt;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup view = (ViewGroup)inflater.inflate(R.layout.fragment_onboarding3, container, false);
+        ViewGroup root = (ViewGroup)inflater.inflate(R.layout.fragment_onboarding3, container, false);
 
-        Button enterBtn = view.findViewById(R.id.enterAppBtn);
+        skipTxt = root.findViewById(R.id.skip_frag2_header);
 
-        enterBtn.setOnClickListener(new View.OnClickListener(){
+        skipTxt.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "App Entered", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Intro Info Skipped", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
 
@@ -35,7 +35,7 @@ public class OnboardFrag3 extends Fragment {
             }
         });
 
-        return view;
+        return root;
     }
 
     public void onClick(View view){
