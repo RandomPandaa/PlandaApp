@@ -36,14 +36,5 @@ public class LoginActivity extends AppCompatActivity {
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
-        TextView skipTxt = findViewById(R.id.skip_frag_header);
-
-        skipTxt.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Intro Info Skipped", Toast.LENGTH_SHORT).show();
-
-            }
-        });
     }
 }
