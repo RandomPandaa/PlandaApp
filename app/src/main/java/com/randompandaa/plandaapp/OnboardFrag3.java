@@ -11,34 +11,47 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-public class OnboardFrag3 extends Fragment {
+public class OnboardFrag3 extends Fragment{
 
-    private TextView skipTxt;
+    Button enterBtn;
+
+    public OnboardFrag3(){
+
+    }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup)inflater.inflate(R.layout.fragment_onboarding3, container, false);
+        ViewGroup view = (ViewGroup)inflater.inflate(R.layout.fragment_onboarding3, container, false);
 
-        skipTxt = root.findViewById(R.id.skip_frag2_header);
+        enterBtn = view.findViewById(R.id.enterAppBtn);
 
-        skipTxt.setOnClickListener(new View.OnClickListener(){
+        enterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Intro Info Skipped", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "App Entered", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
-
-
             }
         });
 
-        return root;
+//        enterBtn.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getActivity(), "Intro Info Skipped", Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent(getActivity(), MainActivity.class);
+//                startActivity(intent);
+//
+//
+//            }
+//        });
+
+        return view;
     }
 
-    public void onClick(View view){
 
-    }
+
 }

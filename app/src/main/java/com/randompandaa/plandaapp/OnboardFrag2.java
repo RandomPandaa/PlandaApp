@@ -24,14 +24,12 @@ public class OnboardFrag2 extends Fragment {
 
         TextView skipTxt = view.findViewById(R.id.skip_frag2_header);
 
-        skipTxt.setOnClickListener(new View.OnClickListener(){
+        skipTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Intro Info Skipped", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
-
-
             }
         });
         

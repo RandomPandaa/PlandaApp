@@ -39,40 +39,16 @@ public class LoginTabFrag extends Fragment {
         ViewGroup view = (ViewGroup) inflater.inflate(R.layout.login_tab_frag, container, false);
 
 
-        btnLogin = btnLogin.findViewById(R.id.login_btn);
+        btnLogin = view.findViewById(R.id.login_btn);
         email = view.findViewById(R.id.login_email_eTxt);
         password = view.findViewById(R.id.login_password_eTxt);
 
         // Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        //Register Code
-//        bCreate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                String sEmail = etEmail.getText().toString();
-//                String sPassword = etPassword.getText().toString();
-//                mAuth.createUserWithEmailAndPassword(sEmail, sPassword)
-//                        .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
-//                            @Override
-//                            public void onComplete(@NonNull Task<AuthResult> task) {
-//                                if (task.isSuccessful()) {
-//                                    // Sign in success, update UI with the signed-in user's information
-//                                    //Log.d(TAG, "createUserWithEmail:success");
-//                                    FirebaseUser user = mAuth.getCurrentUser();
-//                                    Toast.makeText(getActivity(), "Created User with Email: "+user.getEmail(), Toast.LENGTH_SHORT).show();
-//                                    //updateUI(user);
-//                                } else {
-//                                    // If sign in fails, display a message to the user.
-//                                    //Log.w(TAG, "createUserWithEmail:failure", task.getException());
-//                                    Toast.makeText(MainActivity.this, "Authentication failed.",
-//                                            Toast.LENGTH_SHORT).show();
-//                                    //updateUI(null);
-//                                }
-//                            }
-//                        });
-//            }
-//        });
+
+
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,20 +72,20 @@ public class LoginTabFrag extends Fragment {
                         });
             }
         });
-        return null;
+        return view;
     }
 
 
     @Override
     public void onStart() {
         super.onStart();
-//        // Check if user is signed in (non-null) and update UI accordingly.
-//        FirebaseUser currentUser = mAuth.getCurrentUser();
-//        if (currentUser == null) {
-//            Toast.makeText(getActivity(), "Current User is Null", Toast.LENGTH_SHORT).show();
-//        } else {
-//            Toast.makeText(getActivity(), "Current User is " + currentUser.getEmail(), Toast.LENGTH_SHORT).show();
-//            //updateUI(currentUser);
-//        }
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser == null) {
+            Toast.makeText(getActivity(), "Current User is Null", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getActivity(), "Current User is " + currentUser.getEmail(), Toast.LENGTH_SHORT).show();
+            //updateUI(currentUser);
+        }
     }
 }

@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.randompandaa.plandaapp.ui.login.LoginActivity2;
 
 public class OnboardFrag1 extends Fragment {
 
@@ -24,13 +23,13 @@ public class OnboardFrag1 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         ViewGroup view = (ViewGroup)inflater.inflate(R.layout.fragment_onboarding1, container, false);
 
-        TextView skipTxt = view.findViewById(R.id.skip_frag1_header);
+        skipTxt = view.findViewById(R.id.skip_frag1_header);
 
         skipTxt.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Intro Info Skipped", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getActivity(), LoginActivity2.class);
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
                 startActivity(intent);
 
 
