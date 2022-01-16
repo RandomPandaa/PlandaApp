@@ -16,8 +16,7 @@
     <string name="enter_txt">Enter The App</string>
     <string name="frag2_maintxt">Light</string>
     <string name="frag2_bodytxt">Sensor</string>
-<<<<<<< Updated upstream
-=======
+
     <string name="title_activity_login2">LoginActivity2</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -29,5 +28,5 @@
     <string name="login_failed">"Login failed"</string>
     <string name="info">info</string>
     <string name="swipe_explain">Swipe To Navigate</string>
->>>>>>> Stashed changes
+
 </resources>
