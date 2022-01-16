@@ -2,6 +2,7 @@ package com.randompandaa.plandaapp;
 
 
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,7 +31,7 @@ public class LoginTabFrag extends Fragment {
     private FirebaseAuth mAuth;
     private EditText email, password;
     private Button btnLogin;
-    private TextView textLogin;
+    private TextView textLogin, swipe;
     float v=0;
 
 
@@ -43,6 +44,7 @@ public class LoginTabFrag extends Fragment {
         btnLogin = view.findViewById(R.id.login_btn);
         email = view.findViewById(R.id.login_email_eTxt);
         password = view.findViewById(R.id.login_password_eTxt);
+        swipe = view.findViewById(R.id.swipe_txt);
 
         // Firebase Auth
         mAuth = FirebaseAuth.getInstance();
@@ -56,8 +58,7 @@ public class LoginTabFrag extends Fragment {
             public void onClick(View v) {
                 String sEmail = email.getText().toString();
                 String sPassword = password.getText().toString();
-                mAuth.signInWithEmailAndPassword(sEmail, sPassword)
-                        .addOnCompleteListener((Executor) LoginTabFrag.this, new OnCompleteListener<AuthResult>() {
+                mAuth.signInWithEmailAndPassword(sEmail, sPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
@@ -65,6 +66,7 @@ public class LoginTabFrag extends Fragment {
                                     //Log.d(TAG, "signInWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(getActivity(), "Signed In User with Email: " + user.getEmail(), Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(getActivity(), MainActivity.class));
                                     //updateUI(user);
                                 } else {
                                     Toast.makeText(getActivity(), "Error with sign-in", Toast.LENGTH_SHORT).show();
@@ -77,15 +79,19 @@ public class LoginTabFrag extends Fragment {
         email.setTranslationY(300);
         btnLogin.setTranslationY(300);
         password.setTranslationY(300);
+        swipe.setTranslationY(300);
+
 
         email.setAlpha(v);
         btnLogin.setAlpha(v);
         password.setAlpha(v);
+        swipe.setAlpha(v);
 
         email.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(300).start();
         btnLogin.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(500).start();
         password.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(300).start();
-        
+        swipe.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(300).start();
+
         return view;
 
 

@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlandaApp">
         <activity
+            android:name=".AppActivity"
+            android:exported="true"
+            android:label="@string/title_activity_app" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
