@@ -4,12 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/swipe_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swipe_explain"
+
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
-        android:id="@+id/register_email_txt"
+        android:id="@+id/register_email_eTxt"
         android:layout_width="0dp"
         android:layout_height="40dp"
 
-        android:background="@drawable/edit_txt_bg"
+        android:background="@drawable/button_outline"
 
         app:layout_constraintWidth_percent=".8"
         app:layout_constraintVertical_bias=".33"
@@ -24,15 +38,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/register_password"
+        android:id="@+id/register_password_eTxt"
         android:layout_width="0dp"
         android:layout_height="40dp"
 
-        android:background="@drawable/edit_txt_bg"
+        android:background="@drawable/button_outline"
 
-        app:layout_constraintWidth_percent=".8"
-        app:layout_constraintVertical_bias=".4"
-        app:layout_constraintHorizontal_bias=".5"
         android:hint="@string/password_hint_txt"
         android:inputType="textPassword"
         android:paddingStart="20dp"
@@ -40,28 +51,39 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/register_password_txt"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-
-        android:background="@drawable/edit_txt_bg"
-
-        app:layout_constraintWidth_percent=".8"
-        app:layout_constraintVertical_bias=".47"
         app:layout_constraintHorizontal_bias=".5"
-        android:hint="@string/password_confirm_hint_txt"
-        android:inputType="textPassword"
-        android:paddingStart="20dp"
-        android:paddingEnd="10dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="12dp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/register_email_eTxt"
+
+
+        app:layout_constraintWidth_percent=".8" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/register_passConfirm_eTxt"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+
+<!--        android:background="@drawable/button_outline"-->
+
+<!--        android:hint="@string/password_confirm_hint_txt"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:paddingStart="20dp"-->
+<!--        android:paddingEnd="10dp"-->
+<!--        android:paddingTop="12dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--        app:layout_constraintHorizontal_bias=".5"-->
+<!--        app:layout_constraintVertical_bias="0"-->
+
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/register_password_eTxt"-->
+
+<!--        app:layout_constraintWidth_percent=".8" />-->
 
 
     <Button

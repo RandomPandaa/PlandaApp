@@ -21,7 +21,8 @@ public class LoginTabFrag extends Fragment {
     private FirebaseAuth mAuth;
     private EditText email, password;
     private Button btnLogin;
-    private TextView textLogin;
+    private TextView textLogin, swipe;
+    float v=0;
 
 
     @Nullable
@@ -30,6 +31,15 @@ public class LoginTabFrag extends Fragment {
         ViewGroup view = (ViewGroup) inflater.inflate(R.layout.login_tab_frag, container, false);
 
 
+<<<<<<< Updated upstream
+=======
+        btnLogin = view.findViewById(R.id.login_btn);
+        email = view.findViewById(R.id.login_email_eTxt);
+        password = view.findViewById(R.id.login_password_eTxt);
+        swipe = view.findViewById(R.id.swipe_txt);
+
+        // Firebase Auth
+>>>>>>> Stashed changes
         mAuth = FirebaseAuth.getInstance();
         email = email.findViewById(R.id.login_email_eTxt);
         password = password.findViewById(R.id.login_password_txt);
@@ -40,6 +50,7 @@ public class LoginTabFrag extends Fragment {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< Updated upstream
                 //login();
             }
         });
@@ -48,9 +59,53 @@ public class LoginTabFrag extends Fragment {
         return view;
 }
 
+=======
+                String sEmail = email.getText().toString();
+                String sPassword = password.getText().toString();
+                mAuth.signInWithEmailAndPassword(sEmail, sPassword).addOnCompleteListener((Executor) LoginTabFrag.this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    // Sign in success, update UI with the signed-in user's information
+                                    //Log.d(TAG, "signInWithEmail:success");
+                                    FirebaseUser user = mAuth.getCurrentUser();
+                                    Toast.makeText(getActivity(), "Signed In User with Email: " + user.getEmail(), Toast.LENGTH_SHORT).show();
+                                    //updateUI(user);
+                                } else {
+                                    Toast.makeText(getActivity(), "Error with sign-in", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+            }
+        });
+
+        email.setTranslationY(300);
+        btnLogin.setTranslationY(300);
+        password.setTranslationY(300);
+        swipe.setTranslationY(300);
+
+        email.setAlpha(v);
+        btnLogin.setAlpha(v);
+        password.setAlpha(v);
+        swipe.setAlpha(v);
+
+        email.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(300).start();
+        btnLogin.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(500).start();
+        password.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(300).start();
+        swipe.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(300).start();
+
+
+        return view;
+
+
 
 
     }
+>>>>>>> Stashed changes
+
+
+    }
+<<<<<<< Updated upstream
 //
 //    private void login() {
 //        String user = email.getText().toString().trim();
@@ -92,3 +147,8 @@ public class LoginTabFrag extends Fragment {
 //
 //
 //}
+=======
+
+
+}
+>>>>>>> Stashed changes
