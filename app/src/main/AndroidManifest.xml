@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.randompandaa.plandaapp">
 
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlandaApp">
         <activity
-            android:name=".AppActivity"
+            android:name=".Camera"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity"
             android:exported="true"
-            android:label="@string/title_activity_app" />
+            android:label="@string/title_activity_menu" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="true" />

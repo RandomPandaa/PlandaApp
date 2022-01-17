@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".LightSensor">
 
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/back_txt"
+        android:background="@drawable/button_bg"
+        />
+
     <com.mikhaellopez.circularprogressbar.CircularProgressBar
         android:id="@+id/circularProgressBar"
         android:layout_width="300dp"

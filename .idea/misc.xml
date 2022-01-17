@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/layout-w1240dp/activity_login2.xml" value="0.31768707482993197" />
         <entry key="app/src/main/res/layout-w936dp/activity_login2.xml" value="0.182421875" />
         <entry key="app/src/main/res/layout/activity_app.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/activity_camera.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.14" />
         <entry key="app/src/main/res/layout/activity_light_sensor.xml" value="0.17603850050658562" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.296195652173913" />
@@ -20,11 +21,13 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24322916666666666" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/layout/fragment_onboarding1.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_onboarding2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_onboarding3.xml" value="0.25" />
         <entry key="app/src/main/res/layout/login_tab_frag.xml" value="0.2" />
         <entry key="app/src/main/res/layout/register_tab_frag.xml" value="0.23084150741938442" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.259375" />
       </map>
     </option>
   </component>

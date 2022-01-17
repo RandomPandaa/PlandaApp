@@ -16,6 +16,10 @@
     <string name="enter_txt">Enter The App</string>
     <string name="frag2_maintxt">Light</string>
     <string name="frag2_bodytxt">Sensor</string>
+    <string name="frag3_bodytxt">Never forget to water your plants</string>
+    <string name="frag3_maintxt">Always Remember to</string>
+    <string name="frag3_extratxt">Water</string>
+    <string name="bodyTxtFrag3">Never forget when to water your plants</string>
 
     <string name="title_activity_login2">LoginActivity2</string>
     <string name="prompt_email">Email</string>
@@ -33,5 +37,11 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="logout_txt">Logout</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="cameraBtn">Open Camera</string>
+    <string name="light_btn_txt">Light Sensor</string>
+    <string name="camera_btn_txt">Camera</string>
+    <string name="gallery_txt">gallery</string>
+    <string name="back_txt">Back</string>
 
 </resources>
