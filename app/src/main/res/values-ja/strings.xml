@@ -14,6 +14,35 @@
     <string name="register_txt">登録</string>
     <string name="password_confirm_hint_txt">パスワードを認証する</string>
     <string name="enter_txt">アプリケーションを入力してください</string>
-    <string name="frag2_maintxt">Light Sensor</string>
-    <string name="frag2_bodytxt">Sensor</string>
+    <string name="frag2_maintxt">光センサー</string>
+    <string name="frag2_bodytxt">センサー</string>
+
+
+    <string name="frag3_bodytxt">あなたの植物に水をやることを決して忘れないでください</string>
+    <string name="frag3_maintxt">常に忘れないでください</string>
+    <string name="frag3_extratxt">水</string>
+    <string name="bodyTxtFrag3">あなたの植物に水をやるときを決して忘れないでください</string>
+
+    <string name="title_activity_login2">LoginActivity2</string>
+    <string name="prompt_email">Eメール</string>
+    <string name="prompt_password">パスワード</string>
+    <string name="action_sign_in">サインインまたは登録</string>
+    <string name="action_sign_in_short">ログイン</string>
+    <string name="welcome">"いらっしゃいませ !"</string>
+    <string name="invalid_username">有効なユーザー名ではありません</string>
+    <string name="invalid_password">パスワードは5文字以上にする必要があります</string>
+    <string name="login_failed">ログインに失敗しました</string>
+    <string name="info">情報</string>
+    <string name="swipe_explain">スワイプしてナビゲート</string>
+    <string name="title_activity_app">AppActivity</string>
+    <string name="title_home">家</string>
+    <string name="title_dashboard">ダッシュボード</string>
+    <string name="title_notifications">通知</string>
+    <string name="logout_txt">ログアウト</string>
+    <string name="title_activity_menu">メニュー</string>
+    <string name="cameraBtn">オープンカメラ</string>
+    <string name="light_btn_txt">光センサー</string>
+    <string name="camera_btn_txt">カメラ</string>
+    <string name="gallery_txt">ギャラリー</string>
+    <string name="back_txt">戻る</string>
 </resources>
